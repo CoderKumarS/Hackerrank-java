@@ -52,5 +52,6 @@ public class StdinStdout {
         System.out.println(a);
         System.out.println(b); // Complete this line
         System.out.println(c);// Complete this line
+        scan.close();
     }
 }
