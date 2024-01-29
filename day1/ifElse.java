@@ -47,6 +47,24 @@ n>20 and n is even, so it isn't weird. Thus, we print Not Weird.
 
 package Day1;
 
+import java.util.Scanner;
+
 public class ifElse {
-    
+
+    private static final Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        if (N%2!=0) {
+            System.out.println("Weird");
+        } else {
+            if (20 >= N&&N >= 6) {
+                System.out.println("Weird");
+            } else {
+                System.out.println("Not Weird");
+            }
+        }
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        scanner.close();
+    }
 }
